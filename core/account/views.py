@@ -19,7 +19,7 @@ def documents(request):
     return render(request,'document.html',context)
 
 def home_page(request):
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 @login_required(login_url="/login/")
 @csrf_exempt
